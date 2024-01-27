@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
     stockData=data.stocksStatsData;
     console.log(stockData)
     loadFooter(stockData[0])
-    addOnclick(stockData[0])
     refreshChart();
-    // console.log(stockSummary)
-  
+    addOnclick(stockData[0])
+    
   })
   .catch(error => console.error('Error:', error));
 
@@ -190,14 +189,17 @@ function loadFooter(data){
 function addOnclick(data){
   Object.keys(data).forEach((k,i)=>{
     const btn=document.getElementById(`${"btn-"+k}`);
+    if(btn){
     btn.addEventListener("click", function(){
      selectedStock=k;
      console.log(selectedStock)
      loadChart(chartData[0])
   })
+}
   })
 }
 
 function refreshChart(){
+  console.log("I am called")
   loadChart(chartData[0]);
 }
