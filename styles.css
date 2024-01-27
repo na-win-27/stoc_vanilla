@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  background-color: #111;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
+  text-transform: capitalize;
+  font-size: 2rem;
+  letter-spacing:2px ;
+  margin: 20px;
+}
+
+main {
+  position: fixed;
+
+  padding-top: 30px;
+}
+
+.hero {
+  
+  text-align: center;
+  padding: 80px 0px;
+}
+
+.features{
+  display: inline;
+  justify-content: space-between;
+  width: 70vh;
+  height: 80vw;
+
+}
+ .chart {
+   margin-left: 20px;
+  position: fixed;
+   height:70vh; 
+   width:50vw;
+}
+
+
+
+
+.summary{
+  display: flex;
+  position: relative;
+  left:55vw;
+  top:-100px;
+  overflow: scroll;
+  width: 40vw;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 15vh;
+}
+
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+footer ul li .name{
+  font-weight: bold;
+  padding: 40;
+  background-color: #111;
+  color: #fff;
+  height: 30px;
+  width: 70px;
+  transition: 0.3s ease-in;
+  box-shadow:none;
+  border: none;
+}
+
+footer ul li .name:hover{
+  background-color: red;
+}
+
+
+footer ul li .positive{
+  color: green;
+}
+
+
+
+footer ul li .negative{
+  color: red;
+}
+
+
+button{
+  font-weight: bold;
+  padding: 20;
+  background-color: #111;
+  color: red;
+  height: 30px;
+  width: 70px;
+  transition: 0.3s ease-in;
+  box-shadow:none;
+  border: none;
+  text-align: center;
+}
+
+button:hover{
+  background-color: red;
+  color: #111;
+}
+
+
+.selected{
+  background-color: red;
+  color: #111;
+}
+
+.positive{
+  color: green;
+}
+
+.negative{
+  color: red;
+}
